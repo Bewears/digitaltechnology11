@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Website</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:800&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".button").click(function() {
+                $("#bday").fadeOut(1500);
+                $("#Timet").fadeOut(3500);
+                $(".Black").fadeOut(4000);
+
+
+            });
+        });
+
+    </script>
+    <style>
+        body {
+            overflow: hidden;
+        }
+
+    </style>
+
+</head>
+
+<body class="pbody">
+    <div class="Black">
+        <div class="fade">
+            <p id="Timet"><b>Time</b></p>
+
+            <div class="but1">
+                <p id="PEB">Please Enter your Age</p>
+                <p id="resultBday"></p>
+                <input type="number" name="birthdate" id="bday" value="Swag">
+                <button class="button" onclick="othername();fadein2();othername2();">Continue</button>
+            </div>
+        </div>
+    </div>
+    <iframe src="Music/Scilence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+    <audio id="player" autoplay loop>
+    <source src="Music/Clock.mp3" type4rf="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <div class="stage2" id="2">
+        <h1>Climate Change</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="snowflake.html">Snow</a></li>
+            <li><a href="Info.html">Info</a></li>
+        </ul>
+        <p id="equay"></p>
+        <p class="buffer">a</p>
+        <p id="soon">By the year 2035 it will already be too late. Thats only 12 years until the world will be unrepairable. Time is runnning out.</p>
+        <p class="buffer"></p>
+        <p id="WHAT">What are you doing about it?</p>
+    </div>
+    <script>
+        function othername() {
+            var input = document.getElementById("bday").value;
+            var age = input;
+            var sealevel = age * 1.9;
+            var co2 = age * 9.58;
+            var temp = age * 1.05;
+            
+            document.getElementById("equay").innerHTML = "You have been on this planet for  " + age + " years. In that time the sea level has risen " + sealevel + " MM, the temperature has risen " + temp + "° and over " + co2 + " gigaton of CO2 has been released into the atmosphere.";
+
+        }
+
+    </script>
+    <script>
+        function fadein2() {
+            var element = document.getElementById("2");
+            element.classList.add("cfadein");
+        }
+
+    </script>
+    <script>
+        function othername2() {
+            var input = document.getElementById("bday").value;
+            var age = input;
+            var age2 = ;
+            document.getElementById("soon").innerHTML = "";
+        }
+
+    </script>
+
+
+</body>
+
+</html>
